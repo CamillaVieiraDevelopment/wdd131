@@ -1,0 +1,132 @@
+:root {
+    --primary-color: #2b0244;
+    --secondary-color: #621990;
+    --background-color: #c37eed;
+    --text-color: #2b0244;
+    --white-color: #ffffff;
+
+    --heading-font: "Montserrat", sans-serif;
+    --body-font: Arial, Helvetica, sans-serif;
+
+    --padding: 1rem;
+    --border-radius: 6px;
+}
+
+/* RESET BÁSICO */
+    {
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* BODY */
+body {
+    font-family: var(--body-font);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    text-align: center;
+}
+
+#course-title {
+    display: block;
+    padding: 1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+/* NAVIGATION */
+nav {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0.75rem;
+}
+
+nav a {
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* MAIN CONTENT */
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* PAGE TITLE */
+main h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: var(--heading-font);
+}
+
+/* CARDS CONTAINER */
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+}
+
+/* CARD STYLE */
+.card {
+    background-color: var(--white-color);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+}
+
+/* CARD HEADINGS */
+.card h2 {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    padding: 0.5rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* IMAGES */
+.card img {
+    display: block;
+    max-width: 150px;
+    margin: 1rem auto;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.3rem 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
