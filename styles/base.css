@@ -33,12 +33,11 @@ header {
 }
 
 #course-title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
+    display: block;
+    padding: 1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
 }
-
 
 /* NAVIGATION */
 nav {
