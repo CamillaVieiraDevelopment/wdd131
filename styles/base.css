@@ -71,7 +71,7 @@ main h1 {
 /* CARDS */
 .cards-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 3fr 1.5fr;
     gap: 1.5rem;
 }
 
@@ -99,15 +99,20 @@ main h1 {
     align-items: center;
 }
 .about-top img {
-    width: 100%;
+    width: 50%;
     border-radius: 4px;
     justify-self: end;
 }
 
 .about-top p {
-    width: 100%;
+    width: 200%;
     height: auto;
     border-radius: 4px;
+    grid-template-columns: 120px 1fr;
+    gap: 1.5rem;
+    align-items: start;
+    text-align: left;
+    }
 }
 
 /* LOCATION */
@@ -118,6 +123,9 @@ main h1 {
 
 .location h3 {
     font-weight: 700;
+    text-align: center;
+    margin-top: 2rem;
+    
 }
 
 .location hr {
