@@ -94,14 +94,20 @@ main h1 {
 /* ABOUT TOP */
 .about-top {
     display: grid;
-    grid-template-columns: 120px 1fr;
-    gap: 1.5rem;
-    align-items: start;
+    grid-template-columns: 140px 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+.about-top img {
+    width: 100%;
+    border-radius: 4px;
+    justify-self: end;
 }
 
-.about-top img {
-    width: 120px;
-    border-radius: 50%;
+.about-top p {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
 }
 
 /* LOCATION */
