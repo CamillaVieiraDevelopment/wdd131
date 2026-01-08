@@ -1,6 +1,6 @@
-// Get the current year
+// Display current year
 const currentYear = new Date().getFullYear();
-document.getElementById("currentyear").textContent = currentYear;
+document.getElementById("currentyear").innerHTML = currentYear;
 
-// Get the last modified date of the document
-document.getElementById("lastModified").textContent = document.lastModified;
+// Display last modified date
+document.getElementById("lastModified").innerHTML = document.lastModified;
