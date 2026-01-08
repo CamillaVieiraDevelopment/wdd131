@@ -5,31 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 131 - Dynamic Web Fundamentals - Camilla Vieira</title>
+
     <meta name="description"
         content="WDD 131 - Dynamic Web Fundamentals. Camilla Vieira. HTML, CSS, JavaScript, responsive design, web development fundamentals.">
     <meta name="author" content="Camilla Vieira">
 
-    <!--CSS -- GOOGLE FOUNTS -- JS -->
+    <!-- CSS / FONTS / JS -->
     <link rel="stylesheet" href="styles/base.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <script src="js/scripts.js" defer></script>
 </head>
 
 <body>
+
     <header>
-        <!-- Course title -->
         <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
 
-        <!-- Navigation -->
         <nav>
             <a href="https://www.linkedin.com/in/camillafranciannevieira/">LinkedIn Profile</a>
             <a href="https://byupw.instructure.com/">Canvas</a>
-            <a href="https://www.churchofjesuschrist.org/study/scriptures/nt/luke/14?lang=eng">
-                Scripture Study
-            </a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/nt/luke/14?lang=eng">Scripture Study</a>
             <a href="https://camillavieiradevelopment.github.io/wdd131/">Final Project</a>
         </nav>
     </header>
@@ -38,49 +35,81 @@
         <h1>Camilla Francianne Vieira</h1>
 
         <div class="cards-container">
+
+            <!-- CARD 1 -->
             <section class="card">
                 <h2>About Me</h2>
-                <img src="images/camilla_vieira.jpg" alt="Profile photo of Camilla Vieira">
-                <p>
-                    My name is Camilla Vieira, I am brazilian and live with my family in São José dos Pinhais/ Paraná. I am currently a student of web development learning HTML, CSS, and JavaScript.
-                    I apreciate the opportunity to learn and grow in this field. Also I love to go to the beach, walking parks, know new places.                    
-                    This page is part of the WDD 131 course.
-                </p>
 
-                <p>
-                 São José dos Pinhais - Paraná - Brasil
-                    _____________________________
+                <div class="about-top">
+                    <img src="images/camilla_vieira.jpg" alt="Profile photo of Camilla Vieira">
 
+                    <p>
+                        My name is Camilla Vieira, I am Brazilian and live with my family in São José dos Pinhais,
+                        Paraná. I am currently a student of web development learning HTML, CSS, and JavaScript.
+                        I appreciate the opportunity to learn and grow in this field. I love going to the beach,
+                        walking in parks, and discovering new places. This page is part of the WDD 131 course.
+                    </p>
+                </div>
 
-                    São José dos Pinhais is a city located in southern Brazil, in the state of Paraná, near the capital Curitiba and the
-                    region’s main international airport. With strong industrial development, especially in the automotive and logistics
-                    sectors. The city combines economic growth with a good quality of life. Paraná, in turn, is known for its cultural
-                    diversity, remarkable natural landscapes such as Iguaçu Falls, and for being one of Brazil’s states with the best
-                    infrastructure, education, and agricultural production, playing a strategic role in the country.
+                <div class="location">
+                    <h3>São José dos Pinhais</h3>
+                    <hr>
 
-                </p>
+                    <div class="location-content">
+                        <div class="flag">
+                            <img src="images/parana_flag.png" alt="Flag of Paraná">
+                            <p><em>Official flag of Paraná</em></p>
+                        </div>
+
+                        <p>
+                            São José dos Pinhais is a city located in southern Brazil, in the state of Paraná,
+                            near the capital Curitiba and the region’s main international airport. With strong
+                            industrial development, especially in the automotive and logistics sectors, the city
+                            combines economic growth with a good quality of life. Paraná is known for its cultural
+                            diversity, remarkable natural landscapes such as Iguaçu Falls, and for being one of
+                            Brazil’s states with the best infrastructure, education, and agricultural production.
+                        </p>
+                    </div>
+                </div>
             </section>
 
+            <!-- CARD 2 -->
             <section class="card">
-                <h2>Web Dev Resources</h2>                
-                <h3>Here are some useful web development resources that I have found helpful in my learning journey:</h3>
-                    <ul>
-                        
-                        <li><a href="https://www.youtube.com/watch?v=McKNP3g6VBA/">Complete Java Course</a> - Comprehensive resource for web developers.</li>
-                        <li><a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a> - Comprehensive resource for web developers.</li>
-                        <li><a href="https://www.w3schools.com/">W3Schools</a> - Tutorials and references on web development languages.</li>
-                        <li><a href="https://css-tricks.com/">CSS-Tricks</a> - Tips and tricks for using CSS effectively.</li>
-                        <li><a href="https://stackoverflow.com/">Stack Overflow</a> - Community-driven Q&A for programming questions.</li>
-                    </ul>
+                <h2>Web Dev Resources</h2>
+
+                <p class="resources-intro">
+                    Here are some useful web development resources that I have found helpful in my learning journey:
                 </p>
+
+                <ul class="resources-list">
+                    <li>
+                        <a href="https://www.youtube.com/watch?v=McKNP3g6VBA">Complete Java Course</a> –
+                        Comprehensive resource for web developers.
+                    </li>
+                    <li>
+                        <a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a> –
+                        Comprehensive resource for web developers.
+                    </li>
+                    <li>
+                        <a href="https://www.w3schools.com/">W3Schools</a> –
+                        Tutorials and references on web development languages.
+                    </li>
+                    <li>
+                        <a href="https://css-tricks.com/">CSS-Tricks</a> –
+                        Tips and tricks for using CSS effectively.
+                    </li>
+                    <li>
+                        <a href="https://stackoverflow.com/">Stack Overflow</a> –
+                        Community-driven Q&A for programming questions.
+                    </li>
+                </ul>
             </section>
+
         </div>
     </main>
 
     <footer>
-        <p>
-            &copy; <span id="currentyear"></span> Camilla Vieira | Brazil
-        </p>
+        <p>&copy; <span id="currentyear"></span> Camilla Vieira | Brazil</p>
         <p id="lastModified"></p>
     </footer>
 
