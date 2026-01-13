@@ -1,13 +1,38 @@
+// 1. Selecione os elementos fora do evento para eficiência
 const input = document.querySelector('#favchap');
-const button = document.querySelector('button');
-const list = document.querySelector('_______'); // Select the unordered list element
+const button = document.querySelector('button'); // ou o seletor específico do seu botão de adicionar
+const list = document.querySelector('ul'); // Substitua 'ul' pelo ID ou classe da sua lista
 
-const li = document.createElement('li'); // Create a new list item element
+button.addEventListener('click', function () {
+    // 2. Verifique se o valor não está vazio (usando trim para ignorar espaços)
+    if (input.value.trim() !== '') {
 
-const deleteButton = document.createElement('button'); // Create a delete button
+        // 3. Crie os elementos necessários
+        const li = document.createElement('li');
+        const deleteButton = document.createElement('button');
 
-li.textContent = input.value; // Set the text content of the list item to the input value
-deleteButton.textContent = '❌'; // Set the text content of the delete button
-li.append(deleteButton); // Append the delete button to the list item
+        // 4. Configure o conteúdo e acessibilidade
+        li.textContent = input.value;
+        deleteButton.textContent = '❌';
+        deleteButton.setAttribute('aria-label', `Remove ${input.value}`); // Boa prática de acessibilidade
 
-<button aria-label="Close" id="close-button">❌</button>
+        // 5. Monte o item da lista
+        li.append(deleteButton);
+        list.append(li);
+
+        // 6. Adicione a funcionalidade de deletar ao botão recém-criado
+        deleteButton.addEventListener('click', function () {
+            list.removeChild(li);
+            input.focus(); // Retorna o foco para o input após deletar
+        });
+
+        // 7. Limpe o campo e devolva o foco
+        input.value = '';
+        input.focus();
+    } else {
+        // Opcional: focar no input se o usuário tentar adicionar algo vazio
+        input.focus();
+    }
+    // 8. Removendo
+
+});
