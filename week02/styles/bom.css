@@ -1,6 +1,8 @@
+/* Estilos globais e reset [cite: 85] */
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -14,6 +16,7 @@ body {
 
 h1 {
     font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 main {
@@ -23,6 +26,13 @@ main {
     background-color: #ddd;
     display: flex;
     flex-direction: column;
+    min-width: 300px;
+}
+
+.input {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
 }
 
 input,
@@ -31,24 +41,16 @@ button {
 }
 
 button {
-    margin: 0.5rem;
+    cursor: pointer;
 }
 
 .delete {
     width: fit-content;
-}
-
-.input {
-    display: flex;
-    gap: 1rem;
-}
-
-.list {
-    padding: 0.5rem;
+    margin-left: 1rem;
 }
 
 ul {
-    margin: 1rem;
+    margin: 1rem 0;
     list-style: none;
 }
 
@@ -56,8 +58,13 @@ li {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 0.5rem;
+    background: #eee;
+    padding: 0.5rem;
+    border-radius: 4px;
 }
 
+/* Responsividade conforme o guia [cite: 85] */
 @media only screen and (min-width: 32.5em) {
     h1 {
         font-size: 2rem;
