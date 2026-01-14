@@ -1,5 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 header,
@@ -15,10 +17,12 @@ footer {
 main {
     display: grid;
     grid-template-columns: 1fr;
+    /* Uma coluna no mobile */
     grid-gap: 1rem;
 }
 
 section {
     padding: 1rem;
     background-color: #fff;
+    border: 1px solid #eee;
 }
