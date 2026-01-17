@@ -1,4 +1,4 @@
-/* --- Hamburger Menu Logic --- */
+// Hamburger Menu Logic
 const menuButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
 
@@ -7,19 +7,15 @@ menuButton.addEventListener('click', () => {
     navigation.classList.toggle('show');
 });
 
-/* --- Footer Dynamic Content --- */
-// Set current year
+// Dynamic Footer Dates
 const yearSpan = document.querySelector('#year');
-if (yearSpan) {
-    yearSpan.textContent = new Date().getFullYear();
-}
+if (yearSpan) { yearSpan.textContent = new Date().getFullYear(); }
 
-// Display last modification date
 const footer = document.querySelector('footer');
 if (footer) {
-    const lastModParagraph = document.createElement('p');
-    lastModParagraph.textContent = `Last Modification: ${document.lastModified}`;
-    lastModParagraph.style.fontSize = "0.8rem";
-    lastModParagraph.style.marginTop = "0.5rem";
-    footer.appendChild(lastModParagraph);
+    const lastMod = document.createElement('p');
+    lastMod.textContent = `Last Modification: ${document.lastModified}`;
+    lastMod.style.fontSize = "0.8rem";
+    lastMod.style.marginTop = "0.5rem";
+    footer.appendChild(lastMod);
 }
