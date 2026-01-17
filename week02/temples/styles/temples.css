@@ -21,22 +21,52 @@ header h1 {
     font-size: 1.5rem;
 }
 
-/* Flexbox Requirement on Nav */
+/* --- Navigation Styling with High Contrast Fix --- */
 nav {
     display: flex;
-    /* Added directly here for the auditor */
+    /* Flexbox requirement */
     flex-direction: column;
     background-color: #c7d6f5;
+    /* Light blue background */
 }
 
 .navigation {
     display: flex;
-    /* Flex on the list itself */
     flex-direction: column;
     list-style: none;
+    padding: 0;
 }
 
-/* Main Grid Style */
+.navigation li {
+    display: none;
+    /* Mobile first: items hidden until toggled */
+}
+
+/* Specificity fix: Force black text to pass the contrast audit (14.37:1) */
+.navigation a,
+.navigation a:link,
+.navigation a:visited {
+    display: block;
+    padding: 0.75rem;
+    text-decoration: none;
+    color: #000 !important;
+    /* Force black text over light blue */
+    font-weight: 700;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+nav a:hover {
+    text-decoration: underline double;
+    background-color: #eee;
+    color: #000 !important;
+}
+
+.show li {
+    display: block;
+}
+
+/* --- Main Grid Style --- */
 main {
     display: grid;
     grid-template-columns: 1fr;
@@ -85,7 +115,7 @@ footer {
     margin-top: 2rem;
 }
 
-/* Hamburger Menu Button */
+/* --- Hamburger Menu Button --- */
 #menu {
     display: block;
     position: absolute;
@@ -96,6 +126,7 @@ footer {
     padding: 0.5rem;
     background-color: #eee;
     color: #000;
+    z-index: 100;
 }
 
 #menu::before {
@@ -106,32 +137,7 @@ footer {
     content: "X";
 }
 
-/* Nav Links Styling */
-.navigation li {
-    display: none;
-    /* Mobile first: items are hidden */
-}
-
-.navigation a {
-    display: block;
-    padding: 0.75rem;
-    text-decoration: none;
-    color: #000;
-    font-weight: 700;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-nav a:hover {
-    text-decoration: underline double;
-    background-color: #eee;
-    color: #000;
-}
-
-.show li {
-    display: block;
-}
-
-/* Desktop View */
+/* --- Desktop View --- */
 @media only screen and (min-width: 40em) {
     #menu {
         display: none;
