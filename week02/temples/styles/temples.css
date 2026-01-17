@@ -24,11 +24,11 @@ header p {
     padding: 0 1rem 1rem 1rem;
 }
 
-/* Estilo do Álbum */
+/* Album Style */
 main {
     display: grid;
     grid-template-columns: 1fr;
-    /* Padrão mobile: 1 coluna */
+    /* Mobile default: 1 column */
     gap: 1.5rem;
     padding: 1.5rem;
     max-width: 1200px;

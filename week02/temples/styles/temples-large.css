@@ -1,7 +1,7 @@
 @media only screen and (min-width: 64em) {
     main {
         grid-template-columns: repeat(3, 1fr);
-        /* 3 colunas em telas desktop */
+        /* 3 columns on desktop screens */
         gap: 2rem;
     }
 

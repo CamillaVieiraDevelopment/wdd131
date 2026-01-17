@@ -1,26 +1,26 @@
-// 1. Funcionalidade do Menu Hambúrguer
+// 1. Hamburger Menu Functionality
 const menuButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
 
 menuButton.addEventListener('click', () => {
-    // Alterna a classe 'show' no botão para mudar o ícone (≡ para X)
+    // Toggles the 'show' class on the button to change the icon (≡ to X)
     menuButton.classList.toggle('show');
-    // Alterna a classe 'show' na lista <ul> para mostrar/esconder os itens
+    // Toggles the 'show' class on the <ul> list to show/hide items
     navigation.classList.toggle('show');
 });
 
-// 2. Datas do Rodapé (Ano e Última Modificação)
-// Seleciona o elemento do ano atual
+// 2. Footer Dates (Year and Last Modification)
+// Selects the element for the current year
 const yearSpan = document.querySelector('#year');
 const currentYear = new Date().getFullYear();
 yearSpan.textContent = currentYear;
 
-// Opcional: Adicionar a data da última modificação
-// Como o seu HTML só tem um <span> para o ano, vamos adicionar a data de modificação após o parágrafo
+// Optional: Add the last modification date
+// Since the HTML only has one <span> for the year, we add the modification date after the paragraph
 const footerParagraph = document.querySelector('footer p');
 const lastModified = document.lastModified;
 const modificationText = document.createElement('p');
 modificationText.textContent = `Last Modification: ${lastModified}`;
-modificationText.style.fontSize = "0.8rem"; // Estilização leve opcional
+modificationText.style.fontSize = "0.8rem"; // Light optional styling
 modificationText.style.marginTop = "0.5rem";
 document.querySelector('footer').appendChild(modificationText);
