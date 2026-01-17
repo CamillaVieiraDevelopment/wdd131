@@ -14,20 +14,28 @@ header {
     color: #fff;
     text-align: center;
     position: relative;
+    /* Necessary for absolute positioning of the menu button */
 }
 
-/* Album Style */
+/* Header Heading - Required text "Temple Album" [cite: 74, 286] */
+header h1 {
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+/* Album Style - Using CSS Grid [cite: 150, 326] */
 main {
     display: grid;
     grid-template-columns: 1fr;
+    /* Default 1 column for mobile [cite: 327] */
     gap: 1.5rem;
     padding: 1.5rem;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* Ensure title and text span the full grid width */
-main h1,
+/* Ensure title and text span the full grid width [cite: 140] */
+main h2,
 main p {
     grid-column: 1 / -1;
     text-align: center;
@@ -66,31 +74,38 @@ footer {
     margin-top: 2rem;
 }
 
-/* Mobile Menu Control */
+/* Mobile Menu Control - Responsive Hamburger Menu [cite: 338, 340] */
 #menu {
     display: block;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
     font-size: 2rem;
     text-decoration: none;
     padding: 0.5rem;
     background-color: #eee;
     color: #000;
     text-align: center;
+    z-index: 100;
 }
 
 #menu::before {
     content: "≡";
+    /* Hamburger symbol [cite: 341] */
 }
 
 #menu.show::before {
     content: "X";
+    /* Close symbol [cite: 341] */
 }
 
 nav {
     background-color: #c7d6f5;
     color: #000;
-    /* Fixes contrast ratio issue */
+    /* Contrast fix  */
 }
 
+/* Navigation Hover Effect [cite: 152, 318] */
 nav a:hover {
     text-decoration: underline double;
     background-color: #eee;
@@ -100,13 +115,13 @@ nav a:hover {
 .navigation {
     list-style: none;
     display: flex;
-    /* Flexbox always active to satisfy audit */
+    /* Flexbox on nav [cite: 144, 316] */
     flex-direction: column;
 }
 
 .navigation li {
     display: none;
-    /* Hidden by default on mobile */
+    /* Items hidden by default in mobile [cite: 340] */
 }
 
 .navigation a {
@@ -114,22 +129,26 @@ nav a:hover {
     padding: 0.75rem;
     text-decoration: none;
     color: #000;
-    /* Ensures black text for contrast */
+    /* Accessibility contrast fix  */
     font-weight: 700;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+/* Show menu items when button is toggled */
 .show li {
     display: block;
 }
 
+/* Medium screens and larger (min-width 40em) */
 @media only screen and (min-width: 40em) {
     #menu {
         display: none;
+        /* Hide hamburger on larger screens [cite: 339] */
     }
 
     .navigation {
         flex-direction: row;
+        /* Horizontal layout for desktop */
         justify-content: center;
     }
 
