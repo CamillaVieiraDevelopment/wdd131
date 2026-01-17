@@ -45,7 +45,7 @@ nav {
     /* Mobile first: hidden until toggled */
 }
 
-/* HIGH CONTRAST: Black text on light blue passes WCAG AA (14.37:1) */
+/* HIGH CONTRAST:*/
 header nav ul.navigation li a {
     display: block;
     padding: 1rem;
@@ -67,7 +67,6 @@ header nav ul.navigation li a:hover {
 /* --- Main Layout (Grid) --- */
 main {
     display: grid;
-    /* Mandatory Grid for audit */
     grid-template-columns: 1fr;
     gap: 1.5rem;
     padding: 1.5rem;
