@@ -1,4 +1,4 @@
-// Hamburger Menu Logic
+// 1. Hamburger Menu Toggle
 const menuButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
 
@@ -7,15 +7,9 @@ menuButton.addEventListener('click', () => {
     navigation.classList.toggle('show');
 });
 
-// Dynamic Footer Dates
+// 2. Footer Dates
 const yearSpan = document.querySelector('#year');
-if (yearSpan) { yearSpan.textContent = new Date().getFullYear(); }
+yearSpan.textContent = new Date().getFullYear();
 
-const footer = document.querySelector('footer');
-if (footer) {
-    const lastMod = document.createElement('p');
-    lastMod.textContent = `Last Modification: ${document.lastModified}`;
-    lastMod.style.fontSize = "0.8rem";
-    lastMod.style.marginTop = "0.5rem";
-    footer.appendChild(lastMod);
-}
+const lastModSpan = document.querySelector('#lastModified');
+lastModSpan.textContent = `Last Modification: ${document.lastModified}`;
