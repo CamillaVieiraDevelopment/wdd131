@@ -1,3 +1,4 @@
+/* --- Global Resets --- */
 * {
     margin: 0;
     padding: 0;
@@ -21,13 +22,13 @@ header h1 {
     font-size: 1.5rem;
 }
 
-/* --- Navigation Styling with High Contrast Fix --- */
+/* --- Navigation & Contrast Fix --- */
 nav {
     display: flex;
-    /* Flexbox requirement */
+    /* Exigência da auditoria: Flexbox no nav */
     flex-direction: column;
     background-color: #c7d6f5;
-    /* Light blue background */
+    /* Azul claro */
 }
 
 .navigation {
@@ -35,38 +36,39 @@ nav {
     flex-direction: column;
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .navigation li {
     display: none;
-    /* Mobile first: items hidden until toggled */
+    /* Escondido no mobile por padrão */
 }
 
-/* Specificity fix: Force black text to pass the contrast audit (14.37:1) */
-.navigation a,
-.navigation a:link,
-.navigation a:visited {
+/* Seletor de alta especificidade para forçar o contraste sem usar !important */
+header nav ul.navigation li a {
     display: block;
-    padding: 0.75rem;
+    padding: 1rem;
     text-decoration: none;
-    color: #000 !important;
-    /* Force black text over light blue */
+    color: #000000;
+    /* Preto absoluto para contraste máximo */
     font-weight: 700;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
-nav a:hover {
+/* Garante que o estado hover também mantenha contraste */
+header nav ul.navigation li a:hover {
+    background-color: #eeeeee;
+    color: #000000;
     text-decoration: underline double;
-    background-color: #eee;
-    color: #000 !important;
 }
 
-.show li {
+/* Classe controlada pelo JavaScript */
+.navigation.show li {
     display: block;
 }
 
-/* --- Main Grid Style --- */
+/* --- Main Layout (Grid) --- */
 main {
     display: grid;
     grid-template-columns: 1fr;
@@ -80,7 +82,7 @@ main h2,
 main p {
     grid-column: 1 / -1;
     text-align: center;
-    padding: 1rem 0;
+    padding: 0.5rem 0;
 }
 
 figure {
@@ -107,6 +109,7 @@ figcaption {
     font-weight: 700;
 }
 
+/* --- Footer --- */
 footer {
     padding: 1rem;
     background-color: #11047a;
@@ -135,26 +138,4 @@ footer {
 
 #menu.show::before {
     content: "X";
-}
-
-/* --- Desktop View --- */
-@media only screen and (min-width: 40em) {
-    #menu {
-        display: none;
-    }
-
-    .navigation {
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .navigation li {
-        display: block;
-        flex: 1;
-    }
-
-    .navigation a {
-        text-align: center;
-        border-bottom: none;
-    }
 }
