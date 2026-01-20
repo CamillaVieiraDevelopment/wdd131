@@ -5,31 +5,28 @@
     box-sizing: border-box;
 }
 
+/* --- Base --- */
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f4f4f4;
 }
 
+/* --- Header --- */
 header {
     background-color: #083e57;
     color: #fff;
     text-align: center;
-    position: relative;
     padding: 1rem 0;
 }
 
 .header-title {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: bold;
-    padding: 1rem;
-    color: #ffff;
+    color: #fff;
 }
-
 
 /* --- Main Layout --- */
 main {
-    
-    gap: 1.5rem;
     padding: 1.5rem;
     max-width: 1200px;
     margin: 0 auto;
@@ -40,6 +37,14 @@ main h1 {
     padding: 1rem 0;
 }
 
+/* --- Image Container --- */
+.image-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* --- Figure --- */
 figure {
     background-color: #fff;
     border: 1px solid #ddd;
@@ -60,12 +65,51 @@ figcaption {
     padding: 0.75rem;
 }
 
+/* --- Floating Info Boxes (Data & Weather) --- */
+.data-section,
+.weather-section {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 1rem 1.25rem;
+    width: 260px;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* --- Data Box (Left) --- */
+.data-section {
+    top: 20px;
+    left: 20px;
+}
+
+/* --- Weather Box (Right, lower) --- */
+.weather-section {
+    top: 120px;
+    right: 20px;
+}
+
+/* --- Box Titles --- */
+.data-section h2,
+.weather-section h2 {
+    background-color: #0799dd;
+    color: #fff;
+    padding: 0.4rem 0.6rem;
+    margin-bottom: 0.6rem;
+    font-size: 1rem;
+}
+
+/* --- Box Text --- */
+#dataInfo p,
+#weatherInfo p {
+    font-size: 0.9rem;
+    padding: 0.2rem 0;
+    color: #333;
+}
+
 /* --- Footer --- */
 footer {
     padding: 2rem;
-    color: #083e57;
     background-color: #083e57;
     color: #fff;
     text-align: center;
 }
-
