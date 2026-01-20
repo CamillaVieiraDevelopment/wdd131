@@ -1,0 +1,71 @@
+/* --- Global Resets --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #083e57;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    padding: 1rem 0;
+}
+
+.header-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+
+
+/* --- Main Layout (Grid) --- */
+main {
+    
+    gap: 1.5rem;
+    padding: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main h1 {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+figure {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+figcaption {
+    color: #083e57;
+    text-align: center;
+    padding: 0.75rem;
+}
+
+/* --- Footer --- */
+footer {
+    padding: 2rem;
+    color: #083e57;
+    background-color: #083e57;
+    color: #fff;
+    text-align: center;
+}
+
