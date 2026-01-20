@@ -19,14 +19,14 @@ header {
 }
 
 .header-title {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-weight: bold;
     padding: 1rem;
+    color: #ffff;
 }
 
 
-
-/* --- Main Layout (Grid) --- */
+/* --- Main Layout --- */
 main {
     
     gap: 1.5rem;
