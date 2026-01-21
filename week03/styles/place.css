@@ -27,27 +27,22 @@ header {
 
 /* --- Main Layout --- */
 main {
-    padding: 1.5rem;
-    max-width: 1200pxau;
+    max-width: 100%;
+    /* Ajustado para ocupar a tela toda */
     margin: 0 auto;
-}
-
-main h1 {
-    text-align: center;
-    padding: 1rem 0;
+    position: relative;
 }
 
 /* --- Image Container --- */
 .image-container {
     position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 100%;
+    /* Garante que o container ocupe 100% da largura */
 }
 
 /* --- Figure --- */
 figure {
     background-color: #fff;
-    border: 1px solid #ddd;
     display: flex;
     flex-direction: column;
 }
@@ -65,45 +60,52 @@ figcaption {
     padding: 0.75rem;
 }
 
-/* --- Floating Info Boxes (Data & Weather) --- */
+/* --- Floating Info Boxes --- */
 .data-section,
 .weather-section {
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.85);
-    padding: 1rem 1.25rem;
-    width: 260px;
+    background-color: rgba(255, 255, 255, 0.6);
+    /* Transparência aumentada nos cards */
+    padding: 1.25rem;
+    width: 280px;
     border-radius: 4px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* --- Data Box (Left) --- */
+/* --- Data Box (Superior Esquerda) --- */
 .data-section {
-    top: 20px;
-    left: 20px;
+    top: 30px;
+    left: 30px;
 }
 
-/* --- Weather Box (Right, lower) --- */
+/* --- Weather Box (Inferior Direita) --- */
 .weather-section {
-    top: 120px;
-    right: 20px;
+    bottom: 60px;
+    /* Posicionado embaixo como na referência */
+    right: 30px;
 }
 
 /* --- Box Titles --- */
 .data-section h2,
 .weather-section h2 {
-    background-color: #0799dd;
+    background-color: rgba(7, 153, 221, 0.7);
+    /* Azul com transparência */
     color: #fff;
-    padding: 0.4rem 0.6rem;
-    margin-bottom: 0.6rem;
-    font-size: 1rem;
+    padding: 0.5rem 0.8rem;
+    margin: -1.25rem -1.25rem 0.8rem -1.25rem;
+    /* Ajuste para preencher o topo do card */
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /* --- Box Text --- */
 #dataInfo p,
 #weatherInfo p {
-    font-size: 0.9rem;
-    padding: 0.2rem 0;
-    color: #333;
+    font-size: 0.95rem;
+    padding: 0.3rem 0;
+    color: #222;
 }
 
 /* --- Footer --- */
