@@ -1,3 +1,14 @@
+/* --- Global Variables  --- */
+:root {
+    --primary-color: #083e57;
+    --secondary-color: rgba(7, 153, 221, 0.7);
+    --accent-color: #fff;
+    --text-color: #222;
+    --bg-color: #f4f4f4;
+    --card-bg: rgba(255, 255, 255, 0.8);
+    --font-main: 'Roboto', sans-serif;
+}
+
 /* --- Global Resets --- */
 * {
     margin: 0;
@@ -7,28 +18,27 @@
 
 /* --- Base --- */
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f4;
+    font-family: var(--font-main);
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
 /* --- Header --- */
 header {
-    background-color: #083e57;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
     text-align: center;
-    padding: 1rem 0;
+    padding: 1.5rem 0;
 }
 
 .header-title {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #fff;
 }
 
 /* --- Main Layout --- */
 main {
     max-width: 100%;
-    /* Ajustado para ocupar a tela toda */
     margin: 0 auto;
     position: relative;
 }
@@ -37,12 +47,11 @@ main {
 .image-container {
     position: relative;
     width: 100%;
-    /* Garante que o container ocupe 100% da largura */
 }
 
 /* --- Figure --- */
 figure {
-    background-color: #fff;
+    background-color: var(--accent-color);
     display: flex;
     flex-direction: column;
 }
@@ -55,7 +64,7 @@ figure img {
 }
 
 figcaption {
-    color: #083e57;
+    color: var(--primary-color);
     text-align: center;
     padding: 0.75rem;
 }
@@ -63,41 +72,23 @@ figcaption {
 /* --- Floating Info Boxes --- */
 .data-section,
 .weather-section {
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.6);
-    /* Transparência aumentada nos cards */
+    position: relative;
+    /* Changed to relative for mobile view alignment */
+    background-color: var(--card-bg);
     padding: 1.25rem;
-    width: 280px;
+    margin: 1rem;
     border-radius: 4px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-/* --- Data Box (Superior Esquerda) --- */
-.data-section {
-    top: 30px;
-    left: 30px;
-}
-
-/* --- Weather Box (Inferior Direita) --- */
-.weather-section {
-    bottom: 60px;
-    /* Posicionado embaixo como na referência */
-    right: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* --- Box Titles --- */
 .data-section h2,
 .weather-section h2 {
-    background-color: rgba(7, 153, 221, 0.7);
-    /* Azul com transparência */
-    color: #fff;
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
     padding: 0.5rem 0.8rem;
     margin: -1.25rem -1.25rem 0.8rem -1.25rem;
-    /* Ajuste para preencher o topo do card */
     font-size: 1.1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
 /* --- Box Text --- */
@@ -105,13 +96,12 @@ figcaption {
 #weatherInfo p {
     font-size: 0.95rem;
     padding: 0.3rem 0;
-    color: #222;
 }
 
 /* --- Footer --- */
 footer {
     padding: 2rem;
-    background-color: #083e57;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
     text-align: center;
 }
