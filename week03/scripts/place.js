@@ -4,7 +4,7 @@
 document.getElementById("year").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = `Last Modification: ${document.lastModified}`;
 
-// Static values for temperature and wind speed [cite: 81]
+// Static values for temperature and wind speed 
 const temperature = parseFloat(document.getElementById("temp").textContent);
 const windSpeed = parseFloat(document.getElementById("wind").textContent);
 
