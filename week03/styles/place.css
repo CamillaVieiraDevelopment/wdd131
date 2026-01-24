@@ -34,6 +34,7 @@ header {
 .header-title {
     font-size: 1.5rem;
     font-weight: bold;
+    margin: 0;
 }
 
 /* --- Main Layout --- */
