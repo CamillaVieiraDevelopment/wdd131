@@ -15,9 +15,9 @@
         width: 280px;
     }
 
-    /* Estilização do pseudo-elemento no desktop */
+    /* pseudo-elemento no desktop */
     .weather-title::after {
         width: 28px;
         height: 28px;
         
-}
+    }

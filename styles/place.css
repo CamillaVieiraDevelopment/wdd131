@@ -87,7 +87,7 @@ figcaption {
     justify-content: space-between;
 }
 
-/* Pseudo-elemento para o ícone de clima (weather.svg) */
+/* Pseudo-elemento (weather.svg) */
 .weather-title::after {
     content: "";
     display: inline-block;
