@@ -35,7 +35,6 @@ header {
     margin: 0;
 }
 
-/* --- Restante dos estilos mantidos --- */
 main {
     max-width: 100%;
     margin: 0 auto;
@@ -88,9 +87,21 @@ figcaption {
     justify-content: space-between;
 }
 
-.weather-icon {
-    width: 22px;
-    height: 22px;
+/* Pseudo-elemento para o ícone de clima (weather.svg) */
+.weather-title::after {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('../images/weather.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#dataInfo p,
+#weatherInfo p {
+    font-size: 0.95rem;
+    padding: 0.3rem 0;
 }
 
 footer {

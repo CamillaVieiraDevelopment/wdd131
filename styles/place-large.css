@@ -15,12 +15,11 @@
         width: 280px;
     }
 
-    /* Estilo para o ícone SVG */
-    .weather-icon {
-        width: 25px;
-        height: 25px;
-        vertical-align: middle;
-        margin-left: 5px;
-        /* Torna o ícone branco para contrastar com o título azul */
+    /* Estilização do pseudo-elemento no desktop */
+    .weather-title::after {
+        width: 28px;
+        height: 28px;
+        filter: brightness(0) invert(1);
+        /* Torna o ícone branco */
     }
 }
