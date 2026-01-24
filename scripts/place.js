@@ -17,7 +17,6 @@ function calculateWindChill(temp, speed) {
 }
 
 // Check conditions before calling the function 
-// Conditions: Temp <= 10°C AND Wind Speed > 4.8 km/h
 if (temperature <= 10 && windSpeed > 4.8) {
     const wc = calculateWindChill(temperature, windSpeed);
     document.getElementById("chill").textContent = `${wc} °C`;

@@ -15,9 +15,13 @@
         width: 280px;
     }
 
-    /* Pseudo-element for weather icon  */
-    .weather-title::after {
-        content: " ☁️";
-        font-size: 1.2rem;
+    /* Estilo para o ícone SVG */
+    .weather-icon {
+        width: 25px;
+        height: 25px;
+        vertical-align: middle;
+        margin-left: 5px;
+        filter: brightness(0) invert(1);
+        /* Torna o ícone branco para contrastar com o título azul */
     }
 }
