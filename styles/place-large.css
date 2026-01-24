@@ -19,7 +19,5 @@
     .weather-title::after {
         width: 28px;
         height: 28px;
-        filter: brightness(0) invert(1);
-        /* Torna o ícone branco */
-    }
+        
 }
