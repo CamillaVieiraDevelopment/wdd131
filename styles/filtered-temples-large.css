@@ -1,11 +1,25 @@
 @media only screen and (min-width: 64em) {
-    main {
+    #temple-cards-container {
         grid-template-columns: repeat(3, 1fr);
-        /* 3 columns on desktop screens */
         gap: 2rem;
     }
 
     h1 {
         font-size: 2.5rem;
+        text-align: center;
+        margin: 1.5rem 0;
+    }
+
+    .navigation {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .navigation li {
+        display: block;
+    }
+
+    #menu {
+        display: none;
     }
 }
