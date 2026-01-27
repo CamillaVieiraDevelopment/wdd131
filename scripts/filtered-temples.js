@@ -72,7 +72,7 @@ const temples = [
     }
 ];
 
-// Lógica do Menu Hamburguer
+// Menu Hamburguer
 const menuButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
 
@@ -85,7 +85,7 @@ menuButton.addEventListener('click', () => {
 document.querySelector('#year').textContent = new Date().getFullYear();
 document.querySelector('#lastModified').textContent = `Last Modification: ${document.lastModified}`;
 
-// Função para exibir os templos
+// Function for show more the Temples
 const container = document.querySelector('#temple-cards-container');
 
 function displayTemples(filteredTemples) {
@@ -120,5 +120,5 @@ document.querySelector("#small").addEventListener("click", () => {
     displayTemples(temples.filter(t => t.area < 10000));
 });
 
-// Inicialização
+// Inicialization
 displayTemples(temples);
