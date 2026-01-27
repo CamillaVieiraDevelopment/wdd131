@@ -1,0 +1,129 @@
+/* --- Global Resets --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #11047a;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    padding: 1rem 0;
+}
+
+.header-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+/* --- Navigation & High Contrast Fix --- */
+nav {
+    display: flex;
+    /* Mandatory Flexbox for audit */
+    flex-direction: column;
+    background-color: #c7d6f5;
+    /* Light Blue */
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+}
+
+.navigation li {
+    display: none;
+    /* Mobile first: hidden until toggled */
+}
+
+/* HIGH CONTRAST:*/
+header nav ul.navigation li a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 700;
+}
+
+header nav ul.navigation li a:hover {
+    background-color: #eeeeee;
+    color: #000000;
+    text-decoration: underline double;
+}
+
+.navigation.show li {
+    display: block;
+}
+
+/* --- Main Layout (Grid) --- */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+figure {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+}
+
+figure img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+figcaption {
+    background-color: #11047a;
+    color: #fff;
+    text-align: center;
+    padding: 0.75rem;
+}
+
+/* --- Footer --- */
+footer {
+    padding: 2rem;
+    background-color: #11047a;
+    color: #fff;
+    text-align: center;
+}
+
+/* --- Hamburger Menu Button --- */
+#menu {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+#menu.show::before {
+    content: "X";
+}
