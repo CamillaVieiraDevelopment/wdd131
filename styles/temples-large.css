@@ -1,11 +1,11 @@
 @media only screen and (min-width: 64em) {
 
-    /* Esconde o botão de menu no desktop */
+    /* Hidde the button menu on desktop */
     #menu {
         display: none;
     }
 
-    /* Força os itens da lista a aparecerem e ficarem lado a lado */
+    /* It forces the list items to appear and be placed side by side. */
     .navigation {
         flex-direction: row;
         justify-content: center;
@@ -13,12 +13,12 @@
 
     .navigation li {
         display: block;
-        /* Garante que os links apareçam sem precisar do clique */
+        /* Ensures that links appear without requiring a click.Ensures that links appear without requiring a click. */
     }
 
     main {
         grid-template-columns: repeat(3, 1fr);
-        /* 3 colunas em telas desktop */
+        /* 3 columns by print desktop */
         gap: 2rem;
     }
 
