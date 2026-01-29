@@ -1,7 +1,24 @@
 @media only screen and (min-width: 64em) {
+
+    /* Esconde o botão de menu no desktop */
+    #menu {
+        display: none;
+    }
+
+    /* Força os itens da lista a aparecerem e ficarem lado a lado */
+    .navigation {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .navigation li {
+        display: block;
+        /* Garante que os links apareçam sem precisar do clique */
+    }
+
     main {
         grid-template-columns: repeat(3, 1fr);
-        /* 3 columns on desktop screens */
+        /* 3 colunas em telas desktop */
         gap: 2rem;
     }
 

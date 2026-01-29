@@ -15,7 +15,6 @@ header {
     color: #fff;
     text-align: center;
     position: relative;
-    padding: 1rem 0;
 }
 
 .header-title {
@@ -29,8 +28,9 @@ nav {
     display: flex;
     flex-direction: column;
     background-color: #c7d6f5;
-    color:#000000
-    /* Light Blue */
+    /* Azul claro */
+    color: #000000;
+    /* Corrigido: adicionado ponto e vírgula */
 }
 
 .navigation {
@@ -42,16 +42,16 @@ nav {
 
 .navigation li {
     display: none;
-    color: #000000;
-    /* Mobile first: hidden until toggled */
+    /* Escondido no mobile por padrão */
 }
 
-/* HIGH CONTRAST:*/
+/* HIGH CONTRAST: Garantindo preto sobre azul claro */
 header nav ul.navigation li a {
     display: block;
     padding: 1rem;
     text-decoration: none;
     color: #000000;
+    /* Contraste aprovado (14.37:1) */
     font-weight: 700;
 }
 
@@ -61,6 +61,7 @@ header nav ul.navigation li a:hover {
     text-decoration: underline double;
 }
 
+/* Classe ativada pelo JS no Mobile */
 .navigation.show li {
     display: block;
 }
