@@ -27,9 +27,9 @@ header {
 /* --- Navigation & High Contrast Fix --- */
 nav {
     display: flex;
-    /* Mandatory Flexbox for audit */
     flex-direction: column;
     background-color: #c7d6f5;
+    color:#000000
     /* Light Blue */
 }
 
@@ -42,6 +42,7 @@ nav {
 
 .navigation li {
     display: none;
+    color: #000000;
     /* Mobile first: hidden until toggled */
 }
 
