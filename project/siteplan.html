@@ -3,79 +3,275 @@
 
 <head>
     <meta charset="UTF-8">
+    <title>Site Plan – Decole Clínica Psicopedagógica</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Decole Clínica Psicopedagógica</title>
-    <meta name="description"
-        content="A page about the city of São José dos Pinhais, located in the state of Paraná, Brazil. The page provides information about the city and the weather.">
-    <meta name="author" content="Camilla Francianne Silva Ribeiro Vieira">
-    <link rel="icon" href="data:,">
+
+    <!--
+        Author: Camilla Francianne Silva Ribeiro Vieira
+        Course: WDD 131
+        Document Type: Website Planning Document (Site Plan)
+        Note: This document describes the structure and content planning.
+              It is NOT the final website.
+    -->
+
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/place.css">
-    <link rel="stylesheet" href="styles/place-large.css">
-    <script src="scripts/place.js" defer></script>
+
+    <style>
+        /* =====================================================
+           Color Schema – Defined for the Project
+           ===================================================== */
+        :root {
+            --primary-color: #2c0344;
+            /* Headings, header, footer */
+            --secondary-color: #10896b;
+            /* Navigation, highlights */
+            --accent-color: #f2f9ea;
+            /* Background sections */
+
+            /* CTA Button Colors (defined in planning) */
+            --cta-bg-color: #ffbd59;
+            /* Schedule Appointment button */
+            --cta-text-color: #f2f9ea;
+        }
+
+        /* =====================================================
+           Global Styles (Planning Document Only)
+           ===================================================== */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: var(--accent-color);
+            color: #333;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            padding: 1.5rem;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: auto;
+            padding: 2rem;
+        }
+
+        section {
+            background-color: #ffffff;
+            margin-bottom: 3rem;
+            padding: 1.5rem;
+            border-left: 6px solid var(--secondary-color);
+        }
+
+        h1,
+        h2 {
+            color: var(--primary-color);
+        }
+
+        ul {
+            margin-left: 1.5rem;
+        }
+    </style>
 </head>
 
 <body>
+
+    <!-- =====================================================
+         Header – Site Identification
+         ===================================================== -->
     <header>
-        <div class="header-title">Decole Clínica Psicopedagógica</div>
-        <a id="menu" href="#"></a>
-        <nav>
-            <ul class="navigation">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Who are we?</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-
-
-        <h1 class="header-title">Sejam Bem Vindos!</h1>
-        <p class="header-subtitle">Espaço Decole Desenvolvimento Cognitivo</p>
+        <h1>Decole Clínica Psicopedagógica</h1>
+        <p>Website Planning Document</p>
     </header>
 
     <main>
-        <div class="image-container">
-            <figure>
-                <picture>
-                    <source srcset="images/portal_sjp.webp" media="(min-width: 64rem)">
-                    <img src="images/portal_sjp.webp" alt="São José dos Pinhais Gateway" loading="lazy" width="800"
-                        height="500">
-                </picture>
-                <figcaption>Entrance into the city through the Gateway.</figcaption>
-            </figure>
 
-            <section class="data-section">
-                <h2>Data</h2>
-                <div id="dataInfo">
-                    <p><strong>Area:</strong> 946.4 km²</p>
-                    <p><strong>Population:</strong> 329,058</p>
-                    <p><strong>Capital:</strong> Curitiba (Metropolitan)</p>
-                    <p><strong>Languages:</strong> Portuguese</p>
-                    <p><strong>Currency:</strong> Real (R$)</p>
-                    <p><strong>Time Zone:</strong> UTC-3</p>
-                    <p><strong>Calling Code:</strong> +55 41</p>
-                    <p><strong>Internet TLD:</strong> .br</p>
-                </div>
-            </section>
+        <!-- =====================================================
+             1. Site Name
+             ===================================================== -->
+        <section>
+            <h2>1. Site Name</h2>
+            <p><strong>Site Name:</strong> Decole Clínica Psicopedagógica</p>
+            <p>
+                The name "Decole" represents development, growth, and autonomy in the learning process.
+                The clinic’s purpose is to help children, adolescents, and adults overcome learning
+                difficulties and gain confidence to move forward in their educational and personal journeys.
+            </p>
+        </section>
 
-            <section class="weather-section">
-                <h2 class="weather-title">Weather</h2>
-                <div id="weatherInfo">
-                    <p><strong>Temperature:</strong> <span id="temp">10</span>°C</p>
-                    <p><strong>Conditions:</strong> <span id="cond">Cloudy</span></p>
-                    <p><strong>Wind:</strong> <span id="wind">5</span> km/h</p>
-                    <p><strong>Wind Chill:</strong> <span id="chill"></span></p>
-                </div>
-            </section>
-        </div>
+        <!-- =====================================================
+             2. Site Purpose
+             ===================================================== -->
+        <section>
+            <h2>2. Site Purpose</h2>
+            <p>
+                The main purpose of this website is to present the Decole Psychopedagogical Clinic,
+                its services, and its professional approach. The site provides clear and welcoming
+                information for families, schools, and adults facing learning difficulties.
+            </p>
+            <p>
+                The website also aims to facilitate contact, appointment scheduling,
+                and build trust in psychopedagogical care.
+            </p>
+            <ul>
+                <li>Informational</li>
+                <li>Institutional</li>
+                <li>Client acquisition</li>
+                <li>Educational</li>
+            </ul>
+        </section>
+
+        <!-- =====================================================
+             3. Target Audience
+             ===================================================== -->
+        <section>
+            <h2>3. Target Audience</h2>
+
+            <p><strong>Primary Audience:</strong></p>
+            <ul>
+                <li>Parents and guardians of children and adolescents</li>
+                <li>Families seeking guidance on learning difficulties</li>
+                <li>Adults with unresolved learning difficulties</li>
+                <li>Schools and education professionals</li>
+            </ul>
+
+            <p><strong>Secondary Audience:</strong></p>
+            <ul>
+                <li>Teachers</li>
+                <li>Pedagogical coordinators</li>
+                <li>Psychologists and health and education professionals</li>
+            </ul>
+
+            <p>
+                Expected visitor age range: 25 to 55 years old, mainly parents and legal guardians.
+            </p>
+        </section>
+
+        <!-- =====================================================
+             4. Scenarios
+             ===================================================== -->
+        <section>
+            <h2>4. Scenarios</h2>
+            <ul>
+                <li>“My child is having difficulties at school. How can psychopedagogy help?”</li>
+                <li>“I am an adult and have always struggled with learning. Can I still seek support?”</li>
+                <li>“Does the clinic support schools and provide guidance for teachers and families?”</li>
+                <li>“My child is hospitalized long-term. Can psychopedagogy help maintain learning?”</li>
+                <li>“How can psychopedagogical support help hospitalized patients and healthcare institutions?”</li>
+            </ul>
+        </section>
+
+        <!-- =====================================================
+             5. Color Schema
+             ===================================================== -->
+        <section>
+            <h2>5. Color Schema</h2>
+            <ul>
+                <li><strong>Primary Color (#2c0344):</strong> Header, footer, main headings.</li>
+                <li><strong>Secondary Color (#10896b):</strong> Navigation items and visual highlights.</li>
+                <li><strong>Accent Color (#f2f9ea):</strong> Page background and soft sections.</li>
+            </ul>
+
+            <!--
+                CTA Button (Planning Definition)
+                - Background color: #ffbd59
+                - Text color: #f2f9ea
+                - Purpose: Encourage users to schedule an appointment
+            -->
+        </section>
+
+        <!-- =====================================================
+             6. Typography
+             ===================================================== -->
+        <section>
+            <h2>6. Typography</h2>
+            <p>
+                The website uses the Roboto font family for all text elements.
+                Using a single font ensures consistency, accessibility,
+                and a clean, professional appearance.
+            </p>
+        </section>
+
+        <!-- =====================================================
+             7. Site Pages
+             ===================================================== -->
+        <section>
+            <h2>7. Site Pages</h2>
+            <p>
+                The website will be structured into the following pages.
+                Detailed content will be developed in each individual page.
+            </p>
+            <ul>
+                <li>Home</li>
+                <li>Who are we?</li>
+                <li>Services</li>
+                <li>Contact</li>
+            </ul>
+        </section>
+
+        <!-- =====================================================
+             8. Services
+             ===================================================== -->
+        <section>
+            <h2>8. Services</h2>
+            <ul>
+                <li>Psychopedagogical assessment</li>
+                <li>Psychopedagogical intervention</li>
+                <li>Family guidance</li>
+                <li>School support</li>
+                <li>Support for learning difficulties</li>
+                <li>Psychopedagogical support for long-term hospitalized patients and healthcare institutions</li>
+            </ul>
+        </section>
+
+        <!-- =====================================================
+             9. Wireframes
+             ===================================================== -->
+        <section>
+            <h2>9. Wireframes</h2>
+
+            <!--
+                Wireframes are described textually as allowed by the assignment.
+                Visual wireframe images may be added later, but are not required.
+            -->
+
+            <p><strong>Home – Mobile View:</strong></p>
+            <ul>
+                <li>Header with logo, slogan, and navigation menu</li>
+                <li>Hero section with welcome message and main title</li>
+                <li>Call-to-action button: “ Schedule Appointment”</li>
+                <li>Featured image related to child development</li>
+                <li>Business hours section</li>
+            </ul>
+
+            <p><strong>Home – Desktop View:</strong></p>
+            <ul>
+                <li>Wider layout with horizontal navigation</li>
+                <li>Hero section divided into text and image columns</li>
+                <li>Highlighted CTA button for appointment scheduling</li>
+                <li>Additional informational blocks displayed side by side</li>
+            </ul>
+        </section>
+
+        <!-- =====================================================
+             10. Tone and Style
+             ===================================================== -->
+        <section>
+            <h2>10. Tone and Style</h2>
+            <p>
+                The website tone is welcoming, lightly child-friendly,
+                institutional, technical when appropriate,
+                and modern and visually light.
+            </p>
+        </section>
+
     </main>
 
-    <footer>
-        <p>&copy; <span id="year"></span> | Camilla Francianne Silva Ribeiro Vieira | Brazil</p>
-        <p id="lastModified"></p>
-    </footer>
 </body>
 
 </html>

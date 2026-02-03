@@ -1,0 +1,149 @@
+/* =====================================================
+   Global Variables
+   ===================================================== */
+:root {
+    --primary-color: #2c0344;
+    --secondary-color: #10896b;
+    --accent-color: #f2f9ea;
+    --cta-bg-color: #ffbd59;
+    --cta-text-color: #f2f9ea;
+}
+
+/* =====================================================
+   Global Reset
+   ===================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =====================================================
+   Base Styles
+   ===================================================== */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #ffffff;
+    background-color: var(--primary-color);
+}
+
+/* =====================================================
+   Header & Navigation
+   ===================================================== */
+header {
+    background-color: var(--primary-color);
+    padding: 1.5rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo span {
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+/* =====================================================
+   Hero Section
+   ===================================================== */
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 4rem 3rem;
+    gap: 2rem;
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.welcome-badge {
+    background-color: var(--secondary-color);
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+/* CTA Button */
+.cta-button {
+    background-color: var(--cta-bg-color);
+    color: var(--cta-text-color);
+    padding: 0.8rem 1.8rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 700;
+    display: inline-block;
+}
+
+/* Hero Image */
+.hero-image img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+/* =====================================================
+   Info Section
+   ===================================================== */
+.info-section {
+    background-color: var(--secondary-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 3rem;
+    gap: 2rem;
+}
+
+.info-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.hours h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+/* =====================================================
+   Footer
+   ===================================================== */
+footer {
+    background-color: #1a0129;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
