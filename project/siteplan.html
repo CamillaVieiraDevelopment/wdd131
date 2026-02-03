@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decole Clínica Psicopedagógica</title>
+    <meta name="description"
+        content="A page about the city of São José dos Pinhais, located in the state of Paraná, Brazil. The page provides information about the city and the weather.">
+    <meta name="author" content="Camilla Francianne Silva Ribeiro Vieira">
+    <link rel="icon" href="data:,">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-title">Decole Clínica Psicopedagógica</div>
+        <a id="menu" href="#"></a>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Who are we?</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+
+        <h1 class="header-title">Sejam Bem Vindos!</h1>
+        <p class="header-subtitle">Espaço Decole Desenvolvimento Cognitivo</p>
+    </header>
+
+    <main>
+        <div class="image-container">
+            <figure>
+                <picture>
+                    <source srcset="images/portal_sjp.webp" media="(min-width: 64rem)">
+                    <img src="images/portal_sjp.webp" alt="São José dos Pinhais Gateway" loading="lazy" width="800"
+                        height="500">
+                </picture>
+                <figcaption>Entrance into the city through the Gateway.</figcaption>
+            </figure>
+
+            <section class="data-section">
+                <h2>Data</h2>
+                <div id="dataInfo">
+                    <p><strong>Area:</strong> 946.4 km²</p>
+                    <p><strong>Population:</strong> 329,058</p>
+                    <p><strong>Capital:</strong> Curitiba (Metropolitan)</p>
+                    <p><strong>Languages:</strong> Portuguese</p>
+                    <p><strong>Currency:</strong> Real (R$)</p>
+                    <p><strong>Time Zone:</strong> UTC-3</p>
+                    <p><strong>Calling Code:</strong> +55 41</p>
+                    <p><strong>Internet TLD:</strong> .br</p>
+                </div>
+            </section>
+
+            <section class="weather-section">
+                <h2 class="weather-title">Weather</h2>
+                <div id="weatherInfo">
+                    <p><strong>Temperature:</strong> <span id="temp">10</span>°C</p>
+                    <p><strong>Conditions:</strong> <span id="cond">Cloudy</span></p>
+                    <p><strong>Wind:</strong> <span id="wind">5</span> km/h</p>
+                    <p><strong>Wind Chill:</strong> <span id="chill"></span></p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> | Camilla Francianne Silva Ribeiro Vieira | Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

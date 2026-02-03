@@ -1,0 +1,13 @@
+/* --- Global Variables  --- */
+:root {
+    --primary-color: #2c0344;
+    --secondary-color: #10896b;
+    --accent-color: #f2f9ea;
+    --font-main: 'Roboto', sans-serif;
+}
+
+/* --- Global Resets --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
