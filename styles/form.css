@@ -1,0 +1,95 @@
+:root {
+  --primary-color: #09b2c9;
+  --primary-dark: #afdee2;
+  --background-page: #e3f8f8;
+  --background-card: #ffffff;
+  --text-light: #ffffff;
+  --text-dark: #000000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--background-page);
+  margin: 0;
+}
+
+/* ================= HEADER ================= */
+header {
+  background-color: var(--primary-color);
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  color: var(--text-light);
+}
+
+/* ================= MAIN (FORMULÁRIO) ================= */
+main {
+  max-width: 500px;
+  margin: 2rem auto;
+  background: var(--background-card);
+  padding: 1.5rem;
+  border-radius: 6px;
+  color: var(--text-dark);
+  /* 🔑 texto preto no corpo */
+}
+
+label,
+legend {
+  font-weight: bold;
+  margin-top: 1rem;
+  display: block;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  color: var(--text-dark);
+}
+
+fieldset {
+  margin-top: 1rem;
+  border: none;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 0.4rem;
+}
+
+textarea {
+  min-height: 80px;
+}
+
+input[type="submit"] {
+  margin-top: 1.5rem;
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  border: none;
+  padding: 0.8rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--primary-dark);
+}
+
+/* ================= FOOTER ================= */
+footer {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}

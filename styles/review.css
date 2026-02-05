@@ -1,0 +1,26 @@
+:root {
+    --primary-color: #09b2c9;
+    --primary-dark: #afdee2;
+    --background-page: #e3f8f8;
+    --background-card: #ffffff;
+    --text-light: #ffffff;
+    --text-dark: #000000;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-page);
+    text-align: center;
+    color: var(--text-dark);
+
+    margin: 0;
+}
+
+header h1 {
+    margin: 0;
+    color: var(--text-dark);
+}
