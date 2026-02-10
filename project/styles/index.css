@@ -37,6 +37,7 @@ header {
     align-items: center;
     padding: 1.5rem 3rem;
     background-color: var(--primary-color);
+    border-bottom: 2px solid var(--accent-color);
 }
 
 .logo {
