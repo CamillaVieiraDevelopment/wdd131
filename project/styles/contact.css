@@ -1,0 +1,69 @@
+/* styles/contact.css */
+
+.contact-container {
+    padding: 60px 5%;
+    background-color: #f2f9ea;
+    /* Accent Color */
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Flex container for the three methods */
+.contact-methods {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.method {
+    flex: 1;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Icon styling based on contact.jpg */
+.method img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 25px;
+}
+
+/* Info Box - Orange/Yellow from Site Plan CTA definition */
+.info-box {
+    background-color: #ffbd59;
+    /* CTA Background Color from Site Plan */
+    color: #2c0344;
+    /* Primary Color for text contrast */
+    padding: 25px;
+    border-radius: 15px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.info-box:hover {
+    background-color: #e6a94d;
+    /* Slightly darker shade on hover */
+    cursor: pointer;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+    .contact-methods {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .method {
+        width: 100%;
+    }
+}
