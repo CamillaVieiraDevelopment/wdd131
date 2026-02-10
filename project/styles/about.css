@@ -22,12 +22,20 @@
     flex: 1;
 }
 
+.mvw-cards p {
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--primary-color);
+    margin-top: 0.5rem;
+}
+
+
 .card {
     background-color: var(--accent-color);
     padding: 1.5rem;
     border-radius: 15px;
     color: var(--primary-color);
-/* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);*/
+    box-shadow: 0 4px 10px rgba(57, 1, 71, 0.3);
 }
 
 .card h3 {
@@ -37,9 +45,3 @@
     text-align: center;
 }
 
-.mvw-cards p {
-    font-size: 1.5rem;
-    text-align: center;
-    color: var(--primary-color);
-    margin-top: 0.5rem;
-}
