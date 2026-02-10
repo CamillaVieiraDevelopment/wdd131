@@ -125,7 +125,7 @@ nav a {
 ===================================================== */
 .cloud-frame img {
     width: 100%;
-    max-width: 680px;
+    max-width: 1200px;
     /* main cloud larger */
     height: auto;
     z-index: 2;
