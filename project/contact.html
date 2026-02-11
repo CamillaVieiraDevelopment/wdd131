@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Decole Clinic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/contact.css">
 </head>
@@ -15,13 +19,13 @@
             <img src="images/logo.png" alt="Decole Psychopedagogical Clinic logo">
             <span>When learning creates wings</span>
         </div>
-    
+
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html" class="active">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -29,19 +33,40 @@
     <main class="contact-container">
         <div class="contact-methods">
             <div class="method">
-                <img src="images/address.png" alt="Location Icon">
-                <div class="info-box">Visit our Clinic</div>
+                <div class="circle-icon">
+                    <img src="images/address.png" alt="Location Icon">
+                </div>
+                <div class="info-box">
+                    Visit our Clinic
+                    <span>123 Learning St, City</span>
+                </div>
             </div>
+
             <div class="method">
-                <img src="images/wats.png" alt="WhatsApp Icon">
-                <div class="info-box">Chat via WhatsApp</div>
+                <div class="circle-icon">
+                    <img src="images/wats.png" alt="WhatsApp Icon">
+                </div>
+                <div class="info-box">
+                    Chat via WhatsApp
+                    <span>+55 (00) 00000-0000</span>
+                </div>
             </div>
+
             <div class="method">
-                <img src="images/email.png" alt="Email Icon">
-                <div class="info-box">Send an Email</div>
+                <div class="circle-icon">
+                    <img src="images/email.png" alt="Email Icon">
+                </div>
+                <div class="info-box">
+                    Send an Email
+                    <span>decole@decole.com</span>
+                </div>
             </div>
         </div>
     </main>
+
+    <footer>
+        <p>© 2026 Decole Psychopedagogical Clinic</p>
+    </footer>
 </body>
 
 </html>

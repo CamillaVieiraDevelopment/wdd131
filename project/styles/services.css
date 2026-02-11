@@ -40,7 +40,7 @@
     cursor: default;
 }
 
-/* Container circular para imagens */
+/* Circule Container for images */
 .circle-icon {
     width: 180px;
     height: 180px;
@@ -56,7 +56,7 @@
     transition: transform 0.4s ease;
 }
 
-/* Aumenta a imagem levemente no hover do card */
+/* Zoom the image lighting on hover of card */
 .service-card:hover .circle-icon {
     transform: scale(1.1);
 }
