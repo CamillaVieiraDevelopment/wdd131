@@ -242,6 +242,12 @@ footer {
     font-size: 0.9rem;
 }
 
+lastModified {
+    font-size: 0.8rem;
+    color: var(--cta-bg-color);
+    margin-top: 5px;
+}
+
 /* =====================================================
    Responsive (Mobile)
 ===================================================== */
