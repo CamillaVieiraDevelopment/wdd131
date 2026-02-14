@@ -43,3 +43,23 @@
     text-align: center;
 }
 
+/*Mobile Dispositives */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        padding: 2rem 1rem;
+    }
+
+    .about-image {
+        width: 100%;
+        order: -1;
+    }
+
+    .about-image img {
+        max-width: 100%;
+    }
+
+    .mvw-cards {
+        width: 100%;
+    }
+}

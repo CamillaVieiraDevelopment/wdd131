@@ -72,7 +72,6 @@ nav a {
     text-decoration: none;
     font-weight: 500;
     font-size: 2rem;
-    /* Adiciona uma transição suave para a cor */
     transition: color 0.3s ease, border-bottom 0.3s ease;
     padding: 0.5rem 0;
 }
@@ -80,7 +79,7 @@ nav a {
 /* Hover */
 nav a:hover {
     color: var(--cta-bg-color);
-    /* Opcional: Adiciona uma linha amarela sutil abaixo do texto */
+    font-weight: bold
     border-bottom: 2px solid var(--cta-bg-color);
 }
 
@@ -253,14 +252,21 @@ nav a.active {
 footer {
     background-color: #1a0129;
     text-align: center;
-    padding: 1rem;
+    padding: 1.5rem;
     font-size: 0.9rem;
+    color: var(--accent-color)
 }
 
-lastModified {
+footer p {
+    color: var(--accent-color);
+    margin: 5px 0;
+}
+
+#lastModified {
     font-size: 0.8rem;
-    color: var(--cta-bg-color);
+    color: var(--cta-text-color);
     margin-top: 5px;
+    display: block;
 }
 
 /* =====================================================
