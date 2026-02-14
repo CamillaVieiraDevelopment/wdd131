@@ -79,7 +79,7 @@ nav a {
 /* Hover */
 nav a:hover {
     color: var(--cta-bg-color);
-    font-weight: bold
+    font-weight: bold;
     border-bottom: 2px solid var(--cta-bg-color);
 }
 
