@@ -8,10 +8,14 @@
     <meta name="description" content="Schedule your psychopedagogical consultation at Decole Clinic.">
     <meta name="author" content="Camilla Francianne Vieira">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/form.css">
+
+    <script src="scripts/main.js" defer></script>
     <script src="scripts/form.js" defer></script>
 </head>
 
@@ -37,17 +41,11 @@
             <h1>Schedule Appointment</h1>
             <p>Please fill out the form below and we will contact you to confirm your session.</p>
 
-            <form method="get" action="confirmation.html">
+            <form method="get" action="appointment_request.html">
 
                 <label for="service">Requested Service</label>
                 <select id="service" name="service" required>
                     <option value="" disabled selected>Select a Service ...</option>
-                    <option value="assessment">Psychopedagogical Assessment</option>
-                    <option value="intervention">Psychopedagogical Intervention</option>
-                    <option value="family">Family Guidance</option>
-                    <option value="academic">Academic Support</option>
-                    <option value="difficulties">Support for Learning Difficulties</option>
-                    <option value="hospital">Hospitalized Patient Support</option>
                 </select>
 
                 <label for="appointmentDate">Preferred Date</label>
@@ -55,10 +53,12 @@
 
                 <fieldset>
                     <legend>Preferred Period</legend>
-                    <label for="morning"><input type="radio" id="morning" name="period" value="Morning" required>
-                        Morning</label>
-                    <label for="afternoon"><input type="radio" id="afternoon" name="period" value="Afternoon">
-                        Afternoon</label>
+                    <label for="morning">
+                        <input type="radio" id="morning" name="period" value="Morning" required> Morning
+                    </label>
+                    <label for="afternoon">
+                        <input type="radio" id="afternoon" name="period" value="Afternoon"> Afternoon
+                    </label>
                 </fieldset>
 
                 <label for="notes">Additional Information (Patient's age, specific needs, etc.)</label>

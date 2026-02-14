@@ -72,8 +72,23 @@ nav a {
     text-decoration: none;
     font-weight: 500;
     font-size: 2rem;
+    /* Adiciona uma transição suave para a cor */
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    padding: 0.5rem 0;
 }
 
+/* Hover */
+nav a:hover {
+    color: var(--cta-bg-color);
+    /* Opcional: Adiciona uma linha amarela sutil abaixo do texto */
+    border-bottom: 2px solid var(--cta-bg-color);
+}
+
+/* Keep th collor when the page is active */
+nav a.active {
+    color: var(--cta-bg-color);
+    border-bottom: 2px solid var(--cta-bg-color);
+}
 /* =====================================================
    Hero Section
 ===================================================== */
