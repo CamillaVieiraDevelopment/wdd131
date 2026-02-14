@@ -28,11 +28,10 @@
     flex-direction: column;
     align-items: center;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    /* Transição suave para o efeito de hover */
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-/* Efeito de Hover: Card with shadow*/
+/* e Hover: Card with shadow*/
 .service-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
@@ -51,7 +50,6 @@
     justify-content: center;
     box-shadow: 0 4px 10px rgba(57, 1, 71, 0.3);
     overflow: hidden;
-    /* Corta a imagem em formato de círculo */
     transition: transform 0.4s ease;
 }
 
@@ -64,30 +62,27 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* Ajusta a imagem sem distorcer */
 }
 
-/* Títulos em Negrito */
+/* Titles in bold */
 .service-card h3 {
     color: var(--primary-color);
     font-weight: 700;
     margin-bottom: 15px;
     font-size: 1.5rem;
     min-height: 3.6rem;
-    /* Garante alinhamento se o título quebrar linha */
 }
 
-/* Texto da Descrição SEM Negrito */
+/* Description text wihtout bold */
 .service-card p {
     color: var(--primary-color);
     font-weight: 400;
     line-height: 1.6;
     text-align: justify;
-    /* Alinhamento justificado para blocos de texto */
     font-size: 0.95rem;
 }
 
-/* Responsividade: Ajusta para 2 colunas em tablets e 1 em celulares */
+/* Responsivity: Adjust for 2 columns on tablets e 1 in celphones */
 @media (max-width: 1100px) {
     .services-grid {
         grid-template-columns: repeat(2, 1fr);
