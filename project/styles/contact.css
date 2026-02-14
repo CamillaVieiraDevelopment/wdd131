@@ -48,13 +48,13 @@
     object-fit: cover;
 }
 
-/* Efeito Hover */
+/* Effect Hover */
 .method:hover .circle-icon {
     transform: scale(1.1);
     box-shadow: 0 8px 25px rgba(57, 1, 71, 0.3);
 }
 
-/* Caixa de Informação (Botão Amarelo) */
+/* Box Information */
 .info-box {
     background-color: var(--cta-bg-color);
     color: var(--primary-color);
@@ -63,17 +63,15 @@
     font-weight: 700;
     width: 100%;
     min-height: 90px;
-    /* Garante altura para as duas linhas de texto */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     justify-content: center;
     transition: all 0.3s ease;
     word-wrap: break-word;
-    /* Garante que o e-mail não transborde */
 }
 
-/* Estilo para o detalhe (e-mail, telefone ou endereço) */
+/* E-mail, Celphone or address */
 .info-box span {
     display: block;
     font-weight: 400;
@@ -81,13 +79,13 @@
     margin-top: 8px;
 }
 
-/* Mudança de cor no hover */
+/* Hover */
 .method:hover .info-box {
     background-color: var(--primary-color);
     color: var(--accent-color);
 }
 
-/* Responsividade */
+/* Responsivity */
 @media (max-width: 768px) {
     .contact-methods {
         flex-direction: column;

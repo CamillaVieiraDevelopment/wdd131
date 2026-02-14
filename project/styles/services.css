@@ -12,7 +12,6 @@
 
 .services-grid {
     display: grid;
-    /* Força exatamente 3 colunas */
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     padding: 4rem 3rem;
@@ -33,7 +32,7 @@
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-/* Efeito de Hover: Card sobe levemente e ganha sombra */
+/* Efeito de Hover: Card with shadow*/
 .service-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);

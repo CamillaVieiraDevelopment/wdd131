@@ -3,9 +3,7 @@
     display: flex;
     gap: 2rem;
     padding: 4rem 3rem;
-    /* Ajustado para alinhar com o padding do hero da home */
     background-color: var(--accent-color);
-    /* Usando a variável do home.css */
     align-items: center;
 }
 
